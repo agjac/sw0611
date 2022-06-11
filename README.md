@@ -34,9 +34,20 @@
   - 서버에서 처리되는 언어를 사용해서 개발
   - Java, PHP, Python, nodejs
 
+## naming 표기법
 
+- naming하는 경우
+  - HTML/CSS : id, class
+  - js : 변수,  함수
+  - 파일, 폴더
 
-
-
+- 표기법의 의미
+  - 2단어 이상의 여러개로 naming을 할때 단어와 단어 사이를 구분해야 함
+  
+- 표기법의 종류
+  - section_content : snake case - 파일, 폴더
+  - section-content : kebab case - id, case
+  - sectionContent : camel case - js
+  - SectionContent : pascal case - js의 Class
 
 
