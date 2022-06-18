@@ -71,7 +71,17 @@
 
 #### heading(제목)
 
+- h(heading) : 제목태그
+- 1 ~ 6 단계로 표시됨
+
 #### paragraph(단락)
+
+- p(paragraph) : 단락태그
+- 강제줄바꿈, 강제공백은 인식되지 않고 공백 한 칸으로만 인식
+  - line break : br(강제 줄바꿈 태그)
+  - space : &nbsp;(강제 공백 엔터티(Entity))
+- hr(horizontal rule) : 수평선 긋기
+  - 단락을 선의 형태로 구분
 
 #### List(목록)
 
