@@ -25,6 +25,17 @@
 
 <tag ...> : Empty Element
 ```
+-HTML 속성(Attribute)
+  - HTML Element를 표시할 때 필요한 추가정보 입력
+  - name="value"
+```
+<a href="https://www.naver.com">네이버</a>
+
+<img src="photo.jpg">
+
+```
+
+
 
 ## HTML Basic Structure
 ```
