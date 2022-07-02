@@ -131,7 +131,69 @@
 
 ### Semantic
 
+- header
+  - logo, login ...
+- nav(igation)
+  - menu
+- section
+  - 본문 영역
+- article
+  - 본문 영역
+- aside
+  - 본문 영역,  부수적인 콘텐츠
+- footer
+  - 연락처, 주소, 회사 이름
+
 ### Layout
+
+## 경로지정 방식
+- 파일의 위치, 인터넷 주소(url)
+
+- 상대경로 
+  - 리소스 파일을 사용하는 HTML 파일 기준
+  - html 파일 위치에 따라 주소(url) 변경
+  - root(/) 폴더를 기준으로 주소 적용 => root 상대 경로
+```
+[root(/)] - [html1] - home.html
+        - [html2] - [about] - about.html
+        - [images] - photo.jpg
+
+1) home.html -> photo.jpg
+- ../images/photo.jpg
+- /images/photo.jpg
+
+2) about.html -> photo.jpg
+- ../../images/photo.jpg
+- /images/phot.jpg
+```
+- 절대경로
+  - 이미지를 표시하는 HTML 페이지가 기준이 아니고,  해당 서버가 기준
+  - 서버부터 주소(url)를 사용하기 때문에 변동이 없음.
+```
+
+image.com
+
+[root(/)] - [html1] - home.html
+        - [html2] - [about] - about.html
+        - [images] - photo.jpg
+1) home.html
+- www.image.com/images/photo.jpg
+
+2) about.html
+- www.image.com/images/photo.jpg
+
+```
+
+## 강조태그, 기타태그
+
+- 텍스트 특정 부분 강조
+  - strong : 강한 강조
+  - em(phasize) : 일반 강조
+  - mark : html5 버전, block 강조
+
+- 텍스트를 표현할 때 부족한 태그를 보완하는 태그
+  - i(talic)
+  - b(old)
 
 
 
