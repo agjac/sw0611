@@ -146,6 +146,22 @@
 
 ### Layout
 
+- Block & Inline
+  - Block 요소
+    - 태그가 브라우저에 표시될때 각 태그 영역이 새줄에서 표시
+    - 태그 영역이 부모요소에 전체 채워짐
+  - Inline 요소
+    - 태그가 브라우저에 표시될때 각 태그 영역이 같은 줄에서 표시
+    - 태그 영역이 콘텐츠에 맞춰짐
+
+### container element
+
+- div(sion)
+  - block
+- span
+  - inline
+
+
 ## 경로지정 방식
 - 파일의 위치, 인터넷 주소(url)
 
