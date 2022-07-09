@@ -211,17 +211,78 @@ image.com
   - i(talic)
   - b(old)
 
-
-
 # CSS
 
+- content styling
+  - text styling
+  - media styling
 
+- layout(structure styling)
+  - 가로배치(Flexbox)
 
+## CSS Basic
 
+- CSS : Cascading Style Sheet
 
+```
+h1 {color:blue;font-size:20px;}
 
+h1 {
+  color: blue;
+  font-size:20px;
+}
+```
 
+## Selector(선택자)
 
+- 선택자로 HTML 요소를 선택
+- HTML 요소선택 방법
+  - Simple Selector(단순 선택자)
+    - Tag/Element 이름 사용
+    - Class 이름 사용
+    - Id 이름 사용
+
+```
+
+<a href="https://www.naver.com" class="naver">네이버</a>
+<a href="https://www.daum.net" id="daum">다음</a>
+
+/* a 태그 2개모두 red 적용  */
+a {
+  color:red;
+}
+
+/* a 태그 각각 다른 color 적용 */
+
+.naver {
+ color:blue;     
+}
+#daum {
+  color:green;
+}
+
+```
+
+### id, class 이름의 특징
+
+- Id 
+  - 같은 HTML 페이지에서 고유(유일)해야함. 
+  - 프로그래임 언어의 변수와 연결 가능성이 있음
+  - HTML요소에 여러 개의 ID 이름 적용 불가능
+
+- Class (활용 필!!)
+  - 같은 HTML페이지에서 여러번 사용 가능.
+  - HTML 요소에 여러개의 class 이름 사용 가능
+
+```
+<p class="paragraph">단락1</p>
+<p class="paragraph">단락2</p> (o)
+<p id="content">단락3</p>
+<p id="content">단락4</p> (x)
+
+<p class="gnb-list-item">회사소개</p>
+
+```
 
 
 
