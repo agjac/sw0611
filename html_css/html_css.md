@@ -412,20 +412,137 @@ p{
 - normal/bold
 - 단위없는 100단위 숫자 값 사용
 
+#### Link Style
+
+- a 태그가 4가지 상태를 구분함
+- link, visited, hover, active
+
+```
+
+<a href="https://www.naver.com" class="link">naver</a>
+
+a:link{}
+/link:visited{}
+a:hover{}
+a:active{}
+```
+
+### Media Contents styling
+
+- Image, Video
+  - Box Model 적용
+  - 위치 지정
+
+### Layout styling
+
+- Element 영역
+  - Block, Inline Element
+- Element 영역 Styling
+  - Box Model
+- Element 배치
+  - 인접해 있는 박스들의 배치
+  - 인접해 있는 박스들 사이에 영향  
+- 위치 지정 
+  - 박스의 위치를 단독으로 지정
+
+#### Box Model
+
+- Box Model 구성요소
+  - content(width/height), padding, border, margin
+
+- Inline 요소에 box model 적용
+  - width/height : 적용 안됨 
+  - margin : 위 아래 적용 안됨, 좌우 적용됨  
+
+##### width/height
+  - block 요소
+    - width는 부모요소에 채워짐
+    - height는 contents 또는 자식요소에 맞춰짐
+   - px
+    - 수치 값으로 크기 고정
+   - %
+    - 부모 요소를 기준으로 일정 비율 크기만큼 지정
+    - height는 적용이 되지 않음
+   - auto
+    - width/height 자동으로 크기 지정
+    - width/height의 원래 특성으로 적용
+
+##### padding
+
+- 안쪽여백
+
+```
+padding-top
+padding-right
+padding-left
+padding-bottom
+(** 방향순서: top을 기준으로 시걔방향 순서)
+
+padding: 10ox 20px 30px 40px; =4방향 각각 적용
+
+padding: 10ox 20px 30px;(2번째 값 : 좌우 공통적용)
+
+padding: 10ox 20px; (1번째 값: 위아래 공통적용, 2번째 값: 좌우 공통적용)
+
+padding: 10px; => 4방향 공통 적용
+
+```
+
+##### margin
+- margin 사용방법은 padding 동일함
+
+- margin collapse(겹침/상쇄)
+  - 위아래에 인접한 박스의 margin이 상쇄되는 현상
+  - 두 여백중 큰 쪽 여백만 적용
+  - 좌우로 인접한 박스는 양쪽의 margin이 모두 적용되어 합쳐짐
+
+##### border
+
+- 굵기, 모양, 색
+
+```
+border: 1px solid red;
+
+border-top: 1px soild red;
+border-right
+border-bottom
+border-left
+
+```
+
+
+##### background
+
+-배경색 배경이미지
+-배경은 box model 요소 중 content, padding 영역에서 적용
+```
+background-color : red;
+
+background-image: url(이미지 파일);
+background-repeat:no-repeat;
+background-position: 10px 20px;
+background-attachment:fixed;
+```
 
 
 
+#### display
 
+- 박스의 표시 속성을 변경해서 표시
+```
+display: inline; /* block요소가 inline요소의 특성으로 화면에 표시  */
+display: block; /* inline요소가 block요소의 특성으로 화면에 표시  */
+dispaly: inline-block; /* inlne과 block특성을 모두 표시: 나란히 표기, 박스모델 */
 
+```
 
+### layout 배치
 
+- float 
+- flex
+- grid
 
-
-
-
-
-
-
+#### flexbox
 
 
 
