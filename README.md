@@ -50,4 +50,10 @@
   - sectionContent : camel case - js
   - SectionContent : pascal case - js의 Class
 
+## 동적/정적 용어
+- 정적(static)
+  - 개발자가 직접 제어
+  
+- 동적(dynamic)
+  - 프로그래잉 언어가 제어
 
