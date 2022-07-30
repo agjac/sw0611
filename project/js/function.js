@@ -1,0 +1,15 @@
+let gnbListLink=document.querySelectorAll('.gnb-list-link');
+let gnbDepth2=document.querySelectorAll('.gnb-depth2');
+let gnb=document.querySelectorAll('.gnb');
+
+for (let i=0;i<gnbListLink.length;i++){
+  gnbListLink[i].addEventListener('mouseenter',function(){
+    gnbDepth2[i].classList.add('active');
+  });
+
+  gnb.addEventListener('mouseleave',function(){
+    gnbDepth2[i].classList.remove('active');
+  });
+
+}
+
