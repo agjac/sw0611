@@ -544,12 +544,96 @@ dispaly: inline-block; /* inlne과 block특성을 모두 표시: 나란히 표�
 
 #### flexbox
 
+- HTML Element가 포함 관계로 구성
+- 부모 요소에 Flex 설정, 배치관련 속성들을 적용
 
+```
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
 
+.flex-cointainer{
+  display:flex;
+  flex-direction:column; /*박스 배치 방향*/
+  flex-wrap:wrap;/*박스배치 줄바꿈*/
+  justify-content:center; /* 박스 배치 가로 정렬 간격 */
+  align-items : center; /*박스 배치 세로 정렬*/
+}
 
+```
+#### position
 
+- 박스위치 단독지정
+- Top, Right, Bottom, Left 위치 지정 속성과 같이 사용
 
+- relative
+  - 박스 원래 위치에서 좌표 크기 만킁 이동
+  - 요소의 일반 흐름에서 제외되지 않음
 
+  - absoute
+    - position 속성이 적용된 가장 가까운 조상 요소를 기준으로 위치 지정
+    - 요소의 일반 흐름에서 제외됨
+    - 문서에서 제외되지 않음
+
+- fixed
+  - browser 를 기준으로 위치 지정
+  - 요소의 일반 흐름에서 제외됨
+  - 문서에서 제외됨
+
+#### Z-index
+
+  - 박스가 겹칠 때 앞뒤 순서 지정
+  - 값은 단위없는 정수(양수, 음수)를 사용
+  - Z-index를 사용할 때는 position속성이 적용되어 있어야 함
+  - 숫자가 크면 앞으로 나옴
+
+## 반응용 웹
+
+  - 다양한 디바이스의 화면에 컨텐츠, 레이아웃이 잘 보이도록 스타일 구현
+  - OSMU(one source multi use)
+  - 하나의 HTML source 여러개의 CSS source
+
+### 뷰포트
+
+  - 모바일 디바이스 화면에 웹 페이지 컨텐츠나 레이아웃이 잘 보일 수 있도록 하는 기능
+  - 뷰포트가 없을 때는 PC에 최적화된 레이아웃이 모바일 디바이스 화면에 보이게 됨
+
+### 미디어 쿼리
+
+  - 특정조건(상황)에 맞는지 비교
+  - 특정 조건에 맞으면 포함되너 있는 CSS 코드블럭을 실행
+
+  ```
+@media screen and (max-width:600px){}
+@media screen and (min-width:600px){}
+
+max-width:600px; =>600px 보다 작은 범위
+max-width:600px; =>600px 보다 큰 범위
+
+  ```
+
+디바이스 스크린의 해상도는 가로 해상도를 기준
+
+- pc Monitor
+  - 1920px * 1080px :  Full HD(1K)
+  - 3840px * 2160px : 4K
+  - 1280 * 720(1024)
+  - 1024 * 768
+
+- Tablet
+  - 1920*1080
+  - 1280*720
+  - 1024*768
+
+- Phone
+  - 400* 800
+  - 320* 640
+
+- Breakpoint
+  - 화면 크기에 따라 CSS가 다르게 적용되는 해상도 지점
+  - 위 해상도 사례에서 1024, 270, 320 해상도가breakpoint로 선택될 수 있음 
 
 
 
